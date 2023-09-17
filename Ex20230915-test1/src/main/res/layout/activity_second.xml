@@ -6,22 +6,29 @@
     android:padding="16dp">
 
 
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="弹窗标题2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:onClick="btn1_Click"
-        android:text="打开弹窗" />
-
+        android:onClick="btn3_Click"
+        android:text="跳转到第一个页面" />
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:onClick="btn2_Click"
-        android:text="页面跳转" />
-
+        android:onClick="btn5_Click"
+        android:text="跳转到第三个页面" />
 </LinearLayout>
