@@ -20,6 +20,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:onClick="btn1_Click"
-        android:text="类与对象"
+        android:text="类的继承"
         android:textSize="30dp" />
 </LinearLayout>

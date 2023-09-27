@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btn1_Click(View view) {
-
+        String str = "";
+        car nissan = new car("奇骏", 38, 5);
+        car honda = new car("雅阁", 21, 4);
+        str += nissan.getcarinfo();
+        str += honda.getcarinfo();
         TextView output = findViewById(R.id.textview1);
         output.setText(str);
     }
