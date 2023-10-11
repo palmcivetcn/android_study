@@ -17,6 +17,7 @@ public class SumThead extends Thread {
             try {
                 Thread.sleep((int) Math.random() * 10);
             } catch (InterruptedException e) {
+                e.printStackTrace();
             }
             temp += 1;
             Log.d(TAG, Thread.currentThread() + "总和" + temp);
