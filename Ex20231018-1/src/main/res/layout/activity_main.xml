@@ -5,15 +5,6 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textview5"
-        android:layout_width="43dp"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="#673AB7"
-        android:textSize="80sp"
-        android:textStyle="bold" />
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="123dp"
@@ -24,7 +15,6 @@
             android:layout_width="17dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textColor="#673AB7"
             android:textSize="80sp"
             android:textStyle="bold" />
 
@@ -40,7 +30,6 @@
             android:layout_width="43dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textColor="#673AB7"
             android:textSize="80sp"
             android:textStyle="bold" />
 
@@ -56,7 +45,6 @@
             android:layout_width="57dp"
             android:layout_height="123dp"
             android:gravity="center"
-            android:textColor="#673AB7"
             android:textSize="80sp"
             android:textStyle="bold" />
 
@@ -67,15 +55,6 @@
             android:src="@drawable/back"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textview9"
-        android:layout_width="43dp"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="#673AB7"
-        android:textSize="80sp"
-        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button1"
