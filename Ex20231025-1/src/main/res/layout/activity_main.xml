@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:gravity="center"
+        android:text="BMI计算器"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身高：" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userInputLayout1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="height">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userInputEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:text="体重：" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userInputLayout2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="weight">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userInputEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="459dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="计算身体BMI值为："
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" ？"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="btn1_Click"
+        android:text="判断是否处于健康体重："
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text=" ？"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="btn2_Click"
+        android:text="重置"
+        android:textSize="30dp" />
+</LinearLayout>

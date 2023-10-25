@@ -7,7 +7,8 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton imgBtn1, imgBtn2, imgBtn3, btn1;
+    private ImageButton imgBtn1, imgBtn2, imgBtn3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
