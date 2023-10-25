@@ -6,21 +6,24 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     private ImageButton imgBtn1, imgBtn2, imgBtn3;
-
+    Random r = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        final int[] imageArray = {R.drawable.d13, R.drawable.d8, R.drawable.h11};
         imgBtn1 = (ImageButton) findViewById(R.id.img1);
 
         imgBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imgBtn1.setImageResource(R.drawable.d13);
+                int rnd = new Random().nextInt(imageArray.length);
+                imgBtn1.setImageResource(imageArray[rnd]);
             }
         });
 
@@ -29,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         imgBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imgBtn2.setImageResource(R.drawable.d8);
+                int rnd = new Random().nextInt(imageArray.length);
+                imgBtn2.setImageResource(imageArray[rnd]);
             }
         });
 
@@ -38,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         imgBtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imgBtn3.setImageResource(R.drawable.h11);
+                int rnd = new Random().nextInt(imageArray.length);
+                imgBtn3.setImageResource(imageArray[rnd]);
             }
         });
     }
