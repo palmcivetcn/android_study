@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
         TextView lb101 = new TextView(this);
         lb101.setText("自定义界面-标签1");
         lb101.setTextScaleX(20);

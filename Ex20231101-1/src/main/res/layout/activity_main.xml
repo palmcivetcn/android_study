@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/chkOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原味披萨250"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/chkbeef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="牛肉披萨250"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/chkfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="海鲜披萨250"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtquantity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn1_Click"
+        android:text="计算订购金额" />
+
+    <TextView
+        android:id="@+id/lb1output"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:textSize="30dp" />
+
+</LinearLayout>
+
+
+
