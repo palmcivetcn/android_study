@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="about">关于</string>
+    <string name="quit">结束</string>
+</resources>
